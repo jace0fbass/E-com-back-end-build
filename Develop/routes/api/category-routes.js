@@ -65,16 +65,18 @@ router.delete("/:id", (req, res) => {
   try {
     const oneCat = Category.destroy({
       where: {
-        id: req.params.id
-      }
-    })
+        id: req.params.id,
+      },
+    });
     if (!oneCat) {
-      res.status(404).json({ message: "Category not found. Try different ID number." })
-      return
+      res
+        .status(404)
+        .json({ message: "Category not found. Try different ID number." });
+      return;
     }
-    res.status(200).json(oneCat)
-  } catch(err) {
-    res.status(500).json(err)
+    res.status(200).json(oneCat);
+  } catch (err) {
+    res.status(500).json(err);
   }
 });
 
