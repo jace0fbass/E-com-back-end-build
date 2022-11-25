@@ -1,11 +1,4 @@
 // import important parts of sequelize library
-const { DataTypes } = require('sequelize');
-const { DataTypes } = require('sequelize');
-const { DataTypes } = require('sequelize');
-const { DataTypes } = require('sequelize');
-const { DataTypes } = require('sequelize');
-const { DataTypes } = require('sequelize');
-const { DataTypes } = require('sequelize');
 const { Model, DataTypes } = require('sequelize');
 const { validate } = require('../config/connection');
 

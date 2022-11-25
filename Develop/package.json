@@ -3,10 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
-  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js",
+    "start": "node seeds/index && npm run watch",
     "watch": "nodemon server.js",
     "seed": "node seeds/index.js"
   },
