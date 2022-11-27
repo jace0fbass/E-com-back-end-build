@@ -11,7 +11,7 @@ router.get("/", async (req, res) => {
     const allProds = await Product.findAll({
       include: [{ model: Category }, { model: Tag }],
     });
-    console.log(allProds)
+    console.log(allProds);
     res.status(200).json(allProds);
   } catch (err) {
     res.status(500).json(err);
@@ -82,7 +82,7 @@ router.put("/:id", (req, res) => {
     .then((product) => {
       // find all associated tags from ProductTag
       // return ProductTag.findAll({ where: { product_id: req.params.id } });
-      res.status(200).json(product)
+      res.status(200).json(product);
     })
     // .then((productTags) => {
     //   // get list of current tag_ids
@@ -109,7 +109,7 @@ router.put("/:id", (req, res) => {
     // })
     // .then((updatedProductTags) => res.json(updatedProductTags))
     .catch((err) => {
-      console.log("name changed")
+      console.log("name changed");
       console.log(err);
       res.status(400).json(err);
     });
