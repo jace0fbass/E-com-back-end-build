@@ -10,4 +10,5 @@ To use this application, users must npm install <a href="https://expressjs.com/e
 
 
 ## Walkthrough
-<a href="">View Walkthrough</a>
+<a href="https://drive.google.com/file/d/1rq67fwYZXgBGzDeD7OMs6VZN6qBL6aD-/view">View Walkthrough</a>
+
